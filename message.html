@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialHub | Messages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1877f2;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .messages-container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            background: #e4e6eb;
+            border-radius: 10px;
+        }
+
+        .message p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .send-box {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .send-box input {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .send-btn {
+            background: #1877f2;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SocialHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Messages Section -->
+    <div class="messages-container">
+        <h2>Messages</h2>
+        <div class="message">
+            <p><strong>Jane:</strong> Hey, how are you?</p>
+        </div>
+        <div class="message">
+            <p><strong>You:</strong> I'm good! How about you?</p>
+        </div>
+
+        <!-- Message Input Box -->
+        <div class="send-box">
+            <input type="text" placeholder="Type a message...">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+</body>
+</html>

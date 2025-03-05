@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Abstract-Blue-Web-Background.jpg");
+            color: #333;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #1e1e1e;
+            color: #ddd;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #4a90e2;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .toggle-btn {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            background: #0072ff;
+            color: white;
+        }
+        .toggle-btn:hover {
+            background: #005bb5;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background:pink;
+            padding: 20px;
+            border-radius: 15px;
+            margin-right: 20px;
+        }
+        .dark-mode .sidebar {
+            background: #333;
+            color: #ddd;
+        }
+        .feed {
+            flex-grow: 1;
+        }
+        .post {
+            background: pink;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .dark-mode .post {
+            background: #333;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MySocial</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Messages</a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+        <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Friends</h3>
+            <ul>
+                <li><img src="https://tse4.mm.bing.net/th?id=OIP.LcVpI_yA6iH3eR8U6lE8hAHaHa&pid=Api&P=0&h=180" alt="">Friend_1</li>
+                <li><img src="https://tse2.mm.bing.net/th?id=OIP.03WKV-zEZtyHfYqP6IU92QHaHx&pid=Api&P=0&h=180" alt="">Friend_2</li>
+                <li><img src="https://tse3.mm.bing.net/th?id=OIP.PRNS1feyn3tnt2ih2ISDGgAAAA&pid=Api&P=0&h=180" alt="">Friend_3</li>
+                <li><img src="https://tse3.mm.bing.net/th?id=OIP.ixZ69lPCOZ3ZO5UqSHQGIAHaHa&pid=Api&P=0&h=180" alt="">Friend_4</li>
+            </ul>
+        </aside>
+        <main class="feed">
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User1</br></h3><p>Just finished reading a great book! 📖</div>
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User2</br></h3><p>Had an amazing weekend at the beach! 🌊</div>
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User3</br></h3><p>Excited about my new coding project! 💻</div>
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User4</br></h3><p>Just cooked a delicious meal! 🍲</div>
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User5</br></h3><p>Went hiking in the mountains! 🏔️</div>
+            <div class="post"><h3><img src="https://tse1.mm.bing.net/th?id=OIP.lcdOc6CAIpbvYx3XHfoJ0gHaF3&pid=Api&P=0&h=180" alt=""><br>User6</br></h3><p>Enjoying a peaceful evening! 🌅</div>
+
+        </main>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const isDarkMode = document.body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode);
+        }
+        window.onload = function () {
+            const savedDarkMode = localStorage.getItem("darkMode") === "true";
+            if (savedDarkMode) {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+</body>
+</html>
+

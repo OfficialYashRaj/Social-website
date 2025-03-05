@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1877f2;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logout-btn {
+            background: #ff4d4d;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Feed */
+        .feed {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .post {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SocialHub</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <button class="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to SocialHub</h1>
+        <p>Connect with friends, share updates, and explore new content.</p>
+    </section>
+
+    <!-- Feed Section -->
+    <section class="feed">
+        <div class="post">
+            <h3>John Doe</h3>
+            <p>Just enjoying a great day at the park! 🌳</p>
+        </div>
+        <div class="post">
+            <h3>Jane Smith</h3>
+            <p>Excited about my new project! 🚀</p>
+        </div>
+    </section>
+
+</body>
+</html>

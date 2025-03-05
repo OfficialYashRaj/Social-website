@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialHub | Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1877f2;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .profile-container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .profile-info {
+            font-size: 16px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .edit-btn {
+            background: yellow;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SocialHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-img">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-info">Software Developer | Tech Enthusiast</p>
+        <p class="profile-info">Location: New York, USA</p>
+         <button class="edit-btn"><a href="edit.html">Edit Profile</a</button>
+    </div>
+</body>
+</html>
